@@ -2,4 +2,11 @@
 .Rhistory
 .RData
 .Ruserdata
+<<<<<<< HEAD
 data
+=======
+data/_raw/
+>>>>>>> 07db5dbed89f9daacc93f467004d2a4bfe7bdbf9
+
+
+data hej 
