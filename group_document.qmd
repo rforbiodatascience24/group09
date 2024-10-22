@@ -26,4 +26,13 @@ rebecca <- "s215024"
 
 ## Magnus
 
+This is some text
+
+```{r}
+# Some code chunk 
+for (x in 1:10) {
+  print(x)
+}
+```
+
 ## ?Asiya?
