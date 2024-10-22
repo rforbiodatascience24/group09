@@ -23,8 +23,30 @@ print(marco_id)
 
 ## Anita
 
+Hello friends :))))
+
+```{r}
+#skipidi 123 
+1+2
+```
+
 ## Rebecca
 
+```{r}
+#hej med dig
+rebecca <- "s215024"
+#XXX
+```
+
 ## Magnus
+
+This is some text
+
+```{r}
+# Some code chunk 
+for (x in 1:10) {
+  print(x)
+}
+```
 
 ## ?Asiya?
