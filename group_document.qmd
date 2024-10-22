@@ -22,6 +22,7 @@ print(marco_id)
 ```{r}
 #hej med dig
 rebecca <- "s215024"
+#XXX
 ```
 
 ## Magnus
