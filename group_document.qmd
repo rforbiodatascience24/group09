@@ -7,6 +7,14 @@ editor: visual
 
 ## Marco
 
+```{r}
+marco_id <- "s243116"
+```
+
+```{r}
+print(marco_id)
+```
+
 ## Anita
 
 ## Rebecca
