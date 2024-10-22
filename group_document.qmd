@@ -15,6 +15,12 @@ marco_id <- "s243116"
 print(marco_id)
 ```
 
+#### New feature
+
+```{r}
+2*2
+```
+
 ## Anita
 
 ## Rebecca
