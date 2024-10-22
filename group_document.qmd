@@ -38,6 +38,10 @@ New feature
 #hej med dig
 rebecca <- "s215024"
 #XXX
+
+#New analysis
+print(rebecca)
+
 ```
 
 ## Magnus
