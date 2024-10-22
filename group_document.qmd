@@ -1,0 +1,16 @@
+---
+title: "Group Document"
+author: "Andreis Marco"
+format: html
+editor: visual
+---
+
+## Marco
+
+## Anita
+
+## Rebecca
+
+## Magnus
+
+## ?Asiya?
