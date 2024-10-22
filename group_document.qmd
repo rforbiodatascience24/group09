@@ -17,6 +17,13 @@ print(marco_id)
 
 ## Anita
 
+Hello friends :))))
+
+```{r}
+#skipidi 123 
+1+2
+```
+
 ## Rebecca
 
 ```{r}
