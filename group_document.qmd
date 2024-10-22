@@ -7,6 +7,14 @@ editor: visual
 
 ## Marco
 
+```{r}
+marco_id <- "s243116"
+```
+
+```{r}
+print(marco_id)
+```
+
 ## Anita
 
 Hello friends :))))
@@ -19,5 +27,14 @@ Hello friends :))))
 ## Rebecca
 
 ## Magnus
+
+This is some text
+
+```{r}
+# Some code chunk 
+for (x in 1:10) {
+  print(x)
+}
+```
 
 ## ?Asiya?
