@@ -6,29 +6,26 @@ author:
   - "Magnus Harthimmer (s233426)"  
   - "Anita Skovbjerg Hjort-Gregersen (s201190)"
   - "Rebecca Hjermind Millum (s215024)"
-
-format:
-  html:
-    embed-resources: true
+format: html
 editor: visual
-execute:
-  echo: false
-  warning: false
 ---
 
+For this assignment we are going to follow [this](https://clauswilke.com/blog/2020/09/07/pca-tidyverse-style/) blog post, which will serve as an toy example to test the possibilities of collaboration provided by Git. In particular each of the four step described in the blog will be done by a different member of the group.
+
 ```{r}
-library(tidyverse)
+# import necessary packages
+suppressMessages(library(tidyverse))
+suppressMessages(library(broom))
+suppressMessages(library(cowplot))
 ```
 
 ```{r}
-library(broom)  # devtools::install_github("tidymodels/broom")
-library(cowplot)
+# import dataset
+biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv",
+                   show_col_types = FALSE)
 ```
 
-```{r}
-biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
-
-```
+## Look at the data in PC coordinates
 
 ```{r}
 pca_fit <- biopsy %>% 
@@ -51,8 +48,11 @@ pca_fit %>%
   scale_color_manual(
     values = c(malignant = "#D55E00", benign = "#0072B2")
   ) +
-  theme_half_open(12) + background_grid()
+  theme_half_open(12) +
+  background_grid()
 ```
+
+## Look at the data in PC coordinates
 
 ```{r}
 # extract rotation matrix
@@ -77,7 +77,8 @@ pca_fit %>%
     hjust = 1, nudge_x = -0.02, 
     color = "#904C2F"
   ) +
-  xlim(-1.25, .5) + ylim(-.5, 1) +
+  xlim(-1.25, .5) +
+  ylim(-.5, 1) +
   coord_fixed() + # fix aspect ratio to 1:1
   theme_minimal_grid(12)
 ```
