@@ -19,6 +19,8 @@ suppressMessages(library(broom))
 suppressMessages(library(cowplot))
 ```
 
+The dataset we are going to be working with consist in biopsies of breast cancer patients, for which have been collected 9 discrete attributes (1-10) and an outcome classifying the tumors either as malignant or benign. With this analysis we want to get an idea of how the different attributes contribute to determining the outcome.
+
 ```{r}
 # import dataset
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv",
@@ -52,6 +54,8 @@ pca_fit %>%
   background_grid()
 ```
 
+From the plot we can see that the malignant are much more diverse than the benign ones, which instead cluster more nicely.
+
 ## Look at the data in PC coordinates
 
 ```{r}
@@ -83,6 +87,8 @@ pca_fit %>%
   theme_minimal_grid(12)
 ```
 
+We can see that 8 of the 9 attributes mainly contribute to PC1, while the main contributer to PC2 is the "mitosis" attribute.
+
 ## Look at the variance explained by each PC
 
 ```{r}
@@ -102,3 +108,5 @@ pca_fit %>%
   ) +
   theme_minimal_hgrid(12)
 ```
+
+We can see that PC1 is capable of explaning more than 65% of the total variance of the datapoints, which is compatible with the first PCA plot.
